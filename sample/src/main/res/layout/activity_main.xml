@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    tools:context=".MainActivity"
     >
 
   <LinearLayout
@@ -10,445 +11,443 @@
       android:layout_height="wrap_content"
       android:orientation="vertical"
       android:padding="@dimen/activity_horizontal_margin"
-      tools:context=".MainActivity"
-      tools:ignore="HardcodedText"
       >
 
     <!-- Basic -->
 
     <TextView
         android:layout_marginTop="0dp"
-        android:text="Basic"
+        android:text="@string/basic"
         style="@style/SampleHeader"
         />
 
     <Button
         android:id="@+id/basic"
-        android:text="Basic"
+        android:text="@string/basic"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/basic_titled"
-        android:text="Basic + Title"
+        android:text="@string/basic_title"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/basic_buttons"
-        android:text="Basic + Buttons"
+        android:text="@string/basic_buttons"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/basic_stacked_buttons"
-        android:text="Basic + Stacked Buttons"
+        android:text="@string/basic_stacked_buttons"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/basic_titled_buttons"
-        android:text="Basic + Title + Buttons"
+        android:text="@string/basic_title_buttons"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/basic_html_content"
-        android:text="Basic + HTML Content"
+        android:text="@string/basic_html_content"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/basic_long_titled_buttons"
-        android:text="Basic Long + Title + Buttons"
+        android:text="@string/basic_long_title_buttons"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/basic_icon"
-        android:text="Basic + Icon + Buttons"
+        android:text="@string/basic_icon_buttons"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/basic_checkbox_titled_buttons"
-        android:text="Basic + Title + Checkbox + Buttons"
+        android:text="@string/basic_title_checkbox_buttons"
         style="@style/SampleButton"
         />
 
     <!-- Basic Lists -->
 
     <TextView
-        android:text="Lists"
+        android:text="@string/list"
         style="@style/SampleHeader"
         />
 
     <Button
         android:id="@+id/list"
-        android:text="List"
+        android:text="@string/list"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/list_buttons"
-        android:text="List + Buttons"
+        android:text="@string/list_buttons"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/list_dont_wait_positive"
-        android:text="List + Don't Wait For Positive"
+        android:text="@string/list_don_t_wait_for_positive"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/list_titled"
-        android:text="List + Title"
+        android:text="@string/list_title"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/list_titled_buttons"
-        android:text="List + Title + Buttons"
+        android:text="@string/list_title_buttons"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/list_titled_message_buttons"
-        android:text="List + Title + Message + Buttons"
+        android:text="@string/list_title_message_buttons"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/list_long"
-        android:text="List Long"
+        android:text="@string/list_long"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/list_long_titled"
-        android:text="List Long + Title"
+        android:text="@string/list_long_title"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/list_checkPrompt_buttons"
-        android:text="List + Title + Checkbox Prompt + Buttons"
+        android:text="@string/list_title_checkbox_prompt_buttons"
         style="@style/SampleButton"
         />
 
     <!-- Single Choice Lists -->
 
     <TextView
-        android:text="Single Choice Lists"
+        android:text="@string/single_choice_lists"
         style="@style/SampleHeader"
         />
 
     <Button
         android:id="@+id/single_choice_titled"
-        android:text="Single Choice + Title"
+        android:text="@string/single_choice_title"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/single_choice_buttons_titled"
-        android:text="Single Choice + Title + Buttons"
+        android:text="@string/single_choice_title_buttons"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/single_choice_long_items"
-        android:text="Single Choice, Long Items"
+        android:text="@string/single_choice_long_items"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/single_choice_disabled_items"
-        android:text="Single Choice, Disabled Items"
+        android:text="@string/single_choice_disabled_items"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/single_choice_custom_radio_color"
-        android:text="Single Choice, Custom Radio Color"
+        android:text="@string/single_choice_custom_radio_color"
         style="@style/SampleButton"
         />
 
     <!-- Multiple Choice Lists -->
 
     <TextView
-        android:text="Multiple Choice Lists"
+        android:text="@string/multiple_choice_lists"
         style="@style/SampleHeader"
         />
 
     <Button
         android:id="@+id/multiple_choice"
-        android:text="Multiple Choice"
+        android:text="@string/multiple_choice"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/multiple_choice_buttons"
-        android:text="Multiple Choice + Buttons"
+        android:text="@string/multiple_choice_buttons"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/multiple_choice_long_items"
-        android:text="Multiple Choice, Long Items"
+        android:text="@string/multiple_choice_long_items"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/multiple_choice_disabled_items"
-        android:text="Multiple Choice, Disabled Items"
+        android:text="@string/multiple_choice_disabled_items"
         style="@style/SampleButton"
         />
 
     <!-- Action Buttons -->
 
     <TextView
-        android:text="Action Buttons"
+        android:text="@string/action_buttons"
         style="@style/SampleHeader"
         />
 
     <Button
         android:id="@+id/buttons_stacked"
-        android:text="Stacked Buttons"
+        android:text="@string/stacked_buttons"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/buttons_stacked_checkboxPrompt"
-        android:text="Stacked Buttons + Checkbox Prompt"
+        android:text="@string/stacked_buttons_checkbox_prompt"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/buttons_neutral"
-        android:text="Neutral Button"
+        android:text="@string/neutral_button"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/buttons_callbacks"
-        android:text="Button Callbacks"
+        android:text="@string/button_callbacks"
         style="@style/SampleButton"
         />
 
     <TextView
-        android:text="Miscellaneous"
+        android:text="@string/miscellaneous"
         style="@style/SampleHeader"
         />
 
     <Button
         android:id="@+id/misc_dialog_callbacks"
-        android:text="Dialog Callbacks"
+        android:text="@string/dialog_callbacks"
         style="@style/SampleButton"
         />
 
     <!-- Input -->
 
     <TextView
-        android:text="Text Input"
+        android:text="@string/text_input"
         style="@style/SampleHeader"
         />
 
     <Button
         android:id="@+id/input"
-        android:text="Input"
+        android:text="@string/input"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/input_message"
-        android:text="Input + Message"
+        android:text="@string/input_message"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/input_counter"
-        android:text="Input + Counter"
+        android:text="@string/input_counter"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/input_check_prompt"
-        android:text="Input + Checkbox Prompt"
+        android:text="@string/input_checkbox_prompt"
         style="@style/SampleButton"
         />
 
     <!-- Custom Views -->
 
     <TextView
-        android:text="Custom Views"
+        android:text="@string/custom_views"
         style="@style/SampleHeader"
         />
 
     <Button
         android:id="@+id/custom_view"
-        android:text="Custom View"
+        android:text="@string/custom_view"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/custom_view_webview"
-        android:text="Custom View, Web View"
+        android:text="@string/custom_view_web_view"
         style="@style/SampleButton"
         />
 
     <!-- Color Chooser -->
 
     <TextView
-        android:text="Color"
+        android:text="@string/color"
         style="@style/SampleHeader"
         />
 
     <Button
         android:id="@+id/colorChooser_primary"
-        android:text="Color Chooser, Primary"
+        android:text="@string/color_chooser_primary"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/colorChooser_accent"
-        android:text="Color Chooser, Accent"
+        android:text="@string/color_chooser_accent"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/colorChooser_customColors"
-        android:text="Color Chooser, Custom"
+        android:text="@string/color_chooser_custom"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/colorChooser_customColorsNoSub"
-        android:text="Color Chooser, Custom + No Sub"
+        android:text="@string/color_chooser_custom_no_sub"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/colorChooser_primary_customRgb"
-        android:text="Color Chooser, Primary + Custom RGB"
+        android:text="@string/color_chooser_primary_custom_rgb"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/colorChooser_primary_customArgb"
-        android:text="Color Chooser, Primary + Custom ARGB"
+        android:text="@string/color_chooser_primary_custom_argb"
         style="@style/SampleButton"
         />
 
     <!-- File Choosers -->
 
     <TextView
-        android:text="File Choosers"
+        android:text="@string/file_choosers"
         style="@style/SampleHeader"
         />
 
     <Button
         android:id="@+id/file_chooser"
-        android:text="File Chooser"
+        android:text="@string/file_chooser"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/file_chooser_buttons"
-        android:text="File Chooser + Buttons"
+        android:text="@string/file_chooser_buttons"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/file_chooser_filter"
-        android:text="File Chooser + Filter"
+        android:text="@string/file_chooser_filter"
         style="@style/SampleButton"
         />
 
     <!-- Folder Choosers -->
 
     <TextView
-        android:text="Folder Choosers"
+        android:text="@string/folder_choosers"
         style="@style/SampleHeader"
         />
 
     <Button
         android:id="@+id/folder_chooser_buttons"
-        android:text="Folder Chooser + Buttons"
+        android:text="@string/folder_chooser_buttons"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/folder_chooser_filter"
-        android:text="Folder Chooser + Filter"
+        android:text="@string/folder_chooser_filter"
         style="@style/SampleButton"
         />
 
     <!-- DateTime Pickers -->
 
     <TextView
-        android:text="DateTime Pickers"
+        android:text="@string/datetime_pickers"
         style="@style/SampleHeader"
         />
 
     <Button
         android:id="@+id/date_picker"
-        android:text="Date Picker"
+        android:text="@string/date_picker"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/time_picker"
-        android:text="Time Picker"
+        android:text="@string/time_picker"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/datetime_picker"
-        android:text="DateTime Picker"
+        android:text="@string/datetime_picker"
         style="@style/SampleButton"
         />
 
     <!-- Bottom Sheets -->
 
     <TextView
-        android:text="Bottom Sheets"
+        android:text="@string/bottom_sheets"
         style="@style/SampleHeader"
         />
 
     <Button
         android:id="@+id/bottomsheet_info"
-        android:text="Informational"
+        android:text="@string/informational"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/bottomsheet_list"
-        android:text="Item List"
+        android:text="@string/item_list"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/bottomsheet_grid"
-        android:text="Item Grid"
+        android:text="@string/item_grid"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/bottomsheet_customView"
-        android:text="Custom View"
+        android:text="@string/bottomsheet_custom_view"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/bottomsheet_colorPicker"
-        android:text="Color Picker"
+        android:text="@string/bottomsheet_color_picker"
         style="@style/SampleButton"
         />
 
     <Button
         android:id="@+id/bottomsheet_dateTimePicker"
-        android:text="DateTime Picker"
+        android:text="@string/bottomsheet_datetime_picker"
         style="@style/SampleButton"
         />
 

@@ -9,69 +9,69 @@
   </string-array>
 
   <string-array name="socialNetworks_longItems">
-    <item>Twitter is an online social networking service that enables users to send and read short 140-character messages called "tweets".</item>
-    <item>Google+ is an interest-based social network that is owned and operated by Google Inc. The service is Google\'s fourth foray into social networking.</item>
-    <item>Instagram is an online mobile photo-sharing, video-sharing and social networking service that enables its users to take pictures and videos, and share them on a variety of social networking platforms.</item>
-    <item>Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with friends.</item>
+    <item>Twitter 是一种在线社交网络服务，使用户能够发送和阅读称为“推文”的 140 个字符的短消息。</item>
+    <item>Google+ 是一个基于兴趣的社交网络，由谷歌公司拥有和运营。该服务是谷歌第四次进军社交网络。</item>
+    <item>Instagram 是一种在线移动照片共享、视频共享和社交网络服务，使用户能够拍摄照片和视频，并在各种社交网络平台上共享它们。</item>
+    <item>Facebook 是一家在线社交网络服务公司，总部位于加利福尼亚州门洛帕克。其网站由马克·扎克伯格与朋友于 2004 年 2 月 4 日推出。</item>
   </string-array>
 
   <string-array name="states">
-    <item>Alabama</item>
-    <item>Alaska</item>
-    <item>American Samoa</item>
-    <item>Arizona</item>
-    <item>Arkansas</item>
-    <item>California</item>
-    <item>Colorado</item>
-    <item>Connecticut</item>
-    <item>Delaware</item>
-    <item>District of Columbia</item>
-    <item>Florida</item>
-    <item>Georgia</item>
-    <item>Guam</item>
-    <item>Hawaii</item>
-    <item>Idaho</item>
-    <item>Illinois</item>
-    <item>Indiana</item>
-    <item>Iowa</item>
-    <item>Kansas</item>
-    <item>Kentucky</item>
-    <item>Louisiana</item>
-    <item>Maine</item>
-    <item>Maryland</item>
-    <item>Massachusetts</item>
-    <item>Michigan</item>
-    <item>Minnesota</item>
-    <item>Mississippi</item>
-    <item>Missouri</item>
-    <item>Montana</item>
-    <item>Nebraska</item>
-    <item>Nevada</item>
-    <item>New Hampshire</item>
-    <item>New Jersey</item>
-    <item>New Mexico</item>
-    <item>New York</item>
-    <item>North Carolina</item>
-    <item>North Dakota</item>
-    <item>Northern Marianas Islands</item>
-    <item>Ohio</item>
-    <item>Oklahoma</item>
-    <item>Oregon</item>
-    <item>Pennsylvania</item>
-    <item>Puerto Rico</item>
-    <item>Rhode Island</item>
-    <item>South Carolina</item>
-    <item>South Dakota</item>
-    <item>Tennessee</item>
-    <item>Texas</item>
-    <item>Utah</item>
-    <item>Vermont</item>
-    <item>Virginia</item>
-    <item>Virgin Islands</item>
-    <item>Washington</item>
-    <item>West Virginia</item>
-    <item>Wisconsin</item>
-    <item>Wyoming</item>
+    <item>阿拉巴马州</item>
+    <item>阿拉斯加</item>
+    <item>美属萨摩亚</item>
+    <item>亚利桑那州</item>
+    <item>阿肯色州</item>
+    <item>加利福尼亚州</item>
+    <item>科罗拉多州</item>
+    <item>康涅狄格州</item>
+    <item>特拉华州</item>
+    <item>哥伦比亚特区</item>
+    <item>佛罗里达州</item>
+    <item>格鲁吉亚</item>
+    <item>关岛</item>
+    <item>夏威夷</item>
+    <item>爱达荷州</item>
+    <item>伊利诺伊州</item>
+    <item>印第安纳州</item>
+    <item>爱荷华州</item>
+    <item>堪萨斯州</item>
+    <item>肯塔基州</item>
+    <item>路易斯安那州</item>
+    <item>缅因州</item>
+    <item>马里兰州</item>
+    <item>马萨诸塞州</item>
+    <item>密歇根州</item>
+    <item>明尼苏达州</item>
+    <item>密西西比州</item>
+    <item>密苏里州</item>
+    <item>蒙大拿州</item>
+    <item>内布拉斯加州</item>
+    <item>内华达州</item>
+    <item>新罕布什尔州</item>
+    <item>新泽西州</item>
+    <item>新墨西哥州</item>
+    <item>纽约</item>
+    <item>北卡罗来纳州</item>
+    <item>北达科他州</item>
+    <item>北马里亚纳群岛</item>
+    <item>俄亥俄州</item>
+    <item>俄克拉荷马州</item>
+    <item>俄勒冈州</item>
+    <item>宾夕法尼亚州</item>
+    <item>波多黎各</item>
+    <item>罗德岛州</item>
+    <item>南卡罗来纳州</item>
+    <item>南达科他州</item>
+    <item>田纳西州</item>
+    <item>德克萨斯州</item>
+    <item>犹他州</item>
+    <item>佛蒙特州</item>
+    <item>弗吉尼亚州</item>
+    <item>维尔京群岛</item>
+    <item>华盛顿</item>
+    <item>西弗吉尼亚州</item>
+    <item>威斯康星州</item>
+    <item>怀俄明州</item>
   </string-array>
 
 </resources>

@@ -6,16 +6,16 @@
   <item
       android:id="@+id/debug_mode"
       android:checkable="true"
-      android:title="Debug Mode"/>
+      android:title="@string/debug_mode"/>
   <group android:checkableBehavior="single">
     <item
         android:id="@+id/light_theme"
-        android:title="Light Theme"/>
+        android:title="@string/light_theme"/>
     <item
         android:id="@+id/dark_theme"
-        android:title="Dark Theme"/>
+        android:title="@string/dark_theme"/>
     <item
         android:id="@+id/custom_theme"
-        android:title="Custom Theme"/>
+        android:title="@string/custom_theme"/>
   </group>
 </menu>

@@ -1,60 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">材质对话框</string>
 
-  <string name="app_name">Material Dialogs</string>
+    <string name="debug_mode">调试模式</string>
+    <string name="light_theme">明亮主题</string>
+    <string name="dark_theme">黑暗主题</string>
+    <string name="custom_theme">自定义主题</string>
 
-  <string name="agree">Agree</string>
-  <string name="disagree">Disagree</string>
-  <string name="more_info">More Info</string>
+    <string name="agree">同意</string>
+    <string name="disagree">拒绝</string>
+    <string name="more_info">更多信息</string>
+    <string name="choose">选择</string>
+    <string name="shareLocationPrompt">此应用程序想要访问您的位置。</string>
+    <string name="useGoogleLocationServices">使用 Google 的定位服务？</string>
+    <string name="useGoogleLocationServicesPrompt">让 Google 帮助应用程序确定位置。这意味着即使没有运行任何应用程序，也会向 Google 发送匿名位置数据。</string>
+    <string name="htmlContent"><![CDATA[ <b>Material Dialogs<b> 是由 <a href="https:aidanfollestad.com">Aidan Follestad<a> 设计和开发的库。截至 2018 年，Aidan 目前在 <a href="https:github.comsquare">Square<a> 的 <u>Square 设备体验<u>团队工作。<br><br> <i><font color= "0099CC">感谢您使用材质对话框！<font><i> ]]></string>
+    <string name="socialNetworks">社交网络</string>
+    <string name="states">州</string>
+    <string name="loremIpsum">如果他正在受苦，他会被认为是在帮助他。恐惧和智慧永远不会得到回报。
+中间和洪流元素。现在搬运工担心管弦乐队想投票，但他说：，
+伟大的dapibus。以前死在湖里。随着社会的诞生和伟大的山脉的诞生，
+我们生来就是荒谬的。如果设置，树中的任何项目都不会被永久删除。即使是腊肠
+除非没有时间生育。钻石的整体美感并不是最好的。铁轮车
+一个错误和错误的元素。下雪了，喝了一杯丰盛的酒，这是一种诅咒。
+我明天不带你来。我得喝很多茶。佩伦特斯式
+它将是脆弱的，不会引起任何关注。小颗粒是黄色的，好像他是黄色的，
+这行不通。在饥饿之中，在他面前，第一个在肚子里。九月
+各种各样的雪花，它会很容易地指挥你。我们应该害怕尊重别人。没有
+骚扰，像lobortis一样的习惯，巨大的装饰品。他有缺点，他很害怕。
+他需要一些东西。海洋是如此脆弱。</string>
+    <string name="checkboxConfirm">我明白这意味着什么</string>
+    <string name="signalStrength">信号强度</string>
+    <string name="excellent">优秀</string>
+    <string name="security">安全</string>
+    <string name="securityType">802.1x EAP</string>
+    <string name="password">密码</string>
+    <string name="ssid">SSID</string>
+    <string name="ssidLit">材质对话框</string>
+    <string name="showPassword">显示密码</string>
+    <string name="googleWifi">谷歌无线网络</string>
+    <string name="connect">连接</string>
+    <string name="primary_colors">主要颜色</string>
+    <string name="accent_colors">强调颜色</string>
+    <string name="custom_colors">定制颜色</string>
+    <string name="custom_colors_rgb">定制RGB</string>
+    <string name="custom_colors_argb">定制ARGB</string>
+    <string name="select">选择</string>
 
-  <string name="choose">Choose</string>
+    <string name="basic">基本</string>
+    <string name="basic_title">基本 + 标题</string>
+    <string name="basic_buttons">基本 + 按钮</string>
+    <string name="basic_stacked_buttons">基本 + 叠放按钮</string>
+    <string name="basic_title_buttons">基本 + 标题 + 按钮</string>
+    <string name="basic_html_content">基本 + HTML 内容</string>
+    <string name="basic_long_title_buttons">基本 长 + 标题 + 按钮</string>
+    <string name="basic_icon_buttons">基本 + 图标 + 按钮</string>
+    <string name="basic_title_checkbox_buttons">基本 + 标题 + 复选框 + 按钮</string>
+    <string name="list">列表</string>
+    <string name="list_buttons">列表 + 按钮</string>
+    <string name="list_don_t_wait_for_positive">列表 + 不等待确定的结果</string>
+    <string name="list_title_buttons">列表 + 标题 + 按钮</string>
+    <string name="list_title">列表 + 标题</string>
+    <string name="list_title_message_buttons">列表 + 标题 + 信息 + 按钮</string>
+    <string name="list_long">长列表</string>
+    <string name="list_long_title">长列表+ 标题</string>
+    <string name="list_title_checkbox_prompt_buttons">列表 + 标题 + 复选框提示 + 按钮</string>
+    <string name="single_choice_lists">单选列表</string>
+    <string name="single_choice_title">单选 + 标题</string>
+    <string name="single_choice_title_buttons">单选 + 标题 + 按钮</string>
+    <string name="single_choice_long_items">单选, 长条目</string>
+    <string name="single_choice_disabled_items">单选, 禁止条目</string>
+    <string name="single_choice_custom_radio_color">单选, 定制单选框颜色</string>
+    <string name="multiple_choice_lists">多选列表</string>
+    <string name="multiple_choice">多选</string>
+    <string name="multiple_choice_buttons">多选 + 按钮</string>
+    <string name="multiple_choice_long_items">多选, 长条目</string>
+    <string name="multiple_choice_disabled_items">多选, 禁止条目</string>
+    <string name="action_buttons">动作按钮</string>
+    <string name="stacked_buttons_checkbox_prompt">叠放按钮 + 复选框提示</string>
+    <string name="stacked_buttons">叠放按钮</string>
+    <string name="neutral_button">中立按钮</string>
+    <string name="button_callbacks">按钮回调</string>
+    <string name="miscellaneous">各种各样的</string>
+    <string name="dialog_callbacks">对话框回调</string>
+    <string name="text_input">文本输入</string>
+    <string name="input">输入</string>
+    <string name="input_message">输入 + 信息</string>
+    <string name="input_counter">输入 + 计数</string>
+    <string name="input_checkbox_prompt">输入 + 复选框提示</string>
+    <string name="custom_views">定制视图</string>
+    <string name="custom_view">定制视图</string>
+    <string name="custom_view_web_view">定制视图, 网页浏览</string>
+    <string name="color">颜色</string>
+    <string name="color_chooser_primary">颜色选择器, 主要</string>
+    <string name="color_chooser_accent">颜色选择器, 强调</string>
+    <string name="color_chooser_custom">颜色选择器, 定制</string>
+    <string name="color_chooser_custom_no_sub">颜色选择器, 定制 + 无下级选择</string>
+    <string name="color_chooser_primary_custom_rgb">颜色选择器, 主要 + 定制 RGB</string>
+    <string name="color_chooser_primary_custom_argb">颜色选择器, 主要 + 定制 ARGB</string>
+    <string name="file_choosers">文件选择器</string>
+    <string name="file_chooser">文件选择器</string>
+    <string name="file_chooser_buttons">文件选择器 + 按钮</string>
+    <string name="file_chooser_filter">文件选择器 + 筛选</string>
+    <string name="folder_choosers">文件夹选择器</string>
+    <string name="folder_chooser_buttons">文件夹选择器 + 按钮</string>
+    <string name="folder_chooser_filter">文件夹选择器 + 筛选</string>
+    <string name="datetime_pickers">日期时间选择器</string>
+    <string name="date_picker">日期选择器</string>
+    <string name="time_picker">时间选择器</string>
+    <string name="datetime_picker">日期时间选择器</string>
+    <string name="bottom_sheets">底部对话框</string>
+    <string name="informational">信息性</string>
+    <string name="item_list">列表条目</string>
+    <string name="item_grid">表格条目</string>
+    <string name="bottomsheet_custom_view">定制视图</string>
+    <string name="bottomsheet_color_picker">颜色选择器</string>
+    <string name="bottomsheet_datetime_picker">日期时间选择器</string>
 
-  <string name="shareLocationPrompt">This app wants to access your location.</string>
-  <string name="useGoogleLocationServices">Use Google\'s Location Services?</string>
-  <string name="useGoogleLocationServicesPrompt">Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.</string>
-  <string name="htmlContent"><![CDATA[
-    <b>Material Dialogs</b> is a library designed and developed by
-    <a href="https://aidanfollestad.com">Aidan Follestad</a>. As of 2018, Aidan currently works
-    on the <u>Square Device Experience</u> team at <a href="https://github.com/square">Square</a>.<br/><br/>
-    <i><font color="#0099CC">Thanks for using Material Dialogs!</font></i>
-  ]]></string>
-  <string name="socialNetworks">Social Networks</string>
-  <string name="states">States</string>
-  <string name="loremIpsum">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae metus nec sapien
-    elementum interdum ac mollis tortor. Nunc porttitor metus placerat orci auctor, sed dictum
-    magna dapibus. Morbi a lacus ante. Cum sociis natoque penatibus et magnis dis parturient montes,
-    nascetur ridiculus mus. Proin posuere nisl imperdiet lectus elementum accumsan. Etiam lacinia
-    nisi ut nulla fermentum tempus. Integer ornare lacinia diam non maximus. Vestibulum iaculis urna
-    eu elementum scelerisque. Etiam nisl erat, bibendum vitae magna nec, convallis malesuada erat.
-    Cras non porttitor nibh. Pellentesque rhoncus sem luctus felis tincidunt bibendum. Pellentesque
-    vulputate eros at nulla sollicitudin volutpat. Pellentesque laoreet est sit amet erat laoreet,
-    id molestie nulla efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed
-    varius nisl at imperdiet facilisis. Nam in elit sit amet metus dignissim aliquam. Nulla et ante
-    molestie, lobortis velit accumsan, ornare massa. Praesent scelerisque quam ipsum, et feugiat
-    ante aliquet eget. Aenean ultricies vulputate sem.
-  </string>
-  <string name="checkboxConfirm">I understand what this means</string>
 
-  <!-- Custom view example -->
-  <string name="signalStrength">Signal strength</string>
-  <string name="excellent">Excellent</string>
-  <string name="security">Security</string>
-  <string name="securityType">802.1x EAP</string>
-  <string name="password">Password</string>
-  <string name="ssid">SSID</string>
-  <string name="ssidLit">Material Dialogs</string>
-  <string name="showPassword">Show password</string>
-  <string name="googleWifi">Google Wifi</string>
-  <string name="connect">Connect</string>
-
-  <!-- Color Chooser Examples -->
-  <string name="primary_colors">Primary Colors</string>
-  <string name="accent_colors">Accent Colors</string>
-  <string name="custom_colors">Custom Colors</string>
-  <string name="custom_colors_rgb">Custom RGB</string>
-  <string name="custom_colors_argb">Custom ARGB</string>
-
-  <!-- File and Folder Chooser Examples -->
-  <string name="select">Select</string>
-
+    <string name="this_is_a_long_button">这是一个长按钮</string>
+    <string name="so_is_this_these_should_stack">这也是，这些应该堆叠起来</string>
+    <string name="hello_world">你好世界</string>
+    <string name="how_are_you_doing">你好吗?</string>
+    <string name="testing_long_buttons">测试长按钮</string>
+    <string name="type_something">输入一些内容</string>
+    <string name="pre_filled">预填！</string>
+    <string name="select_time">选择时间</string>
+    <string name="select_date_and_time">选择日期和时间</string>
+    <string name="h3_webview_custom_view_material_guidelines_for_google_com_design_spec_components_dialogs_html">
+        <![CDATA[
+            <h3>WebView自定义视图</h3>
+            <ol>
+                <li><b>新：</b>嘿！</li>
+                <li><b>改进：</b>您好！</li>
+                <li><b>修复：</b>嗨！</li>
+                <li><b>修复：</b>再次嘿！</li>
+                <li><b>修复：</b>什么？</li>
+                <li><b>修复：</b>这是一个示例。</li>
+                <li><b>其他：</b>你好吗？</li>
+            </ol>
+            <p>对话框的材料指南：
+                <a href=\'http://www.google.com/design/spec/components/dialogs.html\'>http://www.google.com/design/spec/components/dialogs.html</a>。
+            </p>
+        ]]>
+    </string>
 </resources>

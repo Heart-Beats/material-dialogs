@@ -1,0 +1,164 @@
+<resources>
+
+  <string name="app_name">Material Dialogs</string>
+
+  <string name="debug_mode">Debug Mode</string>
+  <string name="light_theme">Light Theme</string>
+  <string name="dark_theme">Dark Theme</string>
+  <string name="custom_theme">Custom Theme</string>
+
+  <string name="agree">Agree</string>
+  <string name="disagree">Disagree</string>
+  <string name="more_info">More Info</string>
+
+  <string name="choose">Choose</string>
+
+  <string name="shareLocationPrompt">This app wants to access your location.</string>
+  <string name="useGoogleLocationServices">Use Google\'s Location Services?</string>
+  <string name="useGoogleLocationServicesPrompt">Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.</string>
+  <string name="htmlContent"><![CDATA[
+    <b>Material Dialogs</b> is a library designed and developed by
+    <a href="https://aidanfollestad.com">Aidan Follestad</a>. As of 2018, Aidan currently works
+    on the <u>Square Device Experience</u> team at <a href="https://github.com/square">Square</a>.<br/><br/>
+    <i><font color="#0099CC">Thanks for using Material Dialogs!</font></i>
+  ]]></string>
+  <string name="socialNetworks">Social Networks</string>
+  <string name="states">States</string>
+  <string name="loremIpsum">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae metus nec sapien
+    elementum interdum ac mollis tortor. Nunc porttitor metus placerat orci auctor, sed dictum
+    magna dapibus. Morbi a lacus ante. Cum sociis natoque penatibus et magnis dis parturient montes,
+    nascetur ridiculus mus. Proin posuere nisl imperdiet lectus elementum accumsan. Etiam lacinia
+    nisi ut nulla fermentum tempus. Integer ornare lacinia diam non maximus. Vestibulum iaculis urna
+    eu elementum scelerisque. Etiam nisl erat, bibendum vitae magna nec, convallis malesuada erat.
+    Cras non porttitor nibh. Pellentesque rhoncus sem luctus felis tincidunt bibendum. Pellentesque
+    vulputate eros at nulla sollicitudin volutpat. Pellentesque laoreet est sit amet erat laoreet,
+    id molestie nulla efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed
+    varius nisl at imperdiet facilisis. Nam in elit sit amet metus dignissim aliquam. Nulla et ante
+    molestie, lobortis velit accumsan, ornare massa. Praesent scelerisque quam ipsum, et feugiat
+    ante aliquet eget. Aenean ultricies vulputate sem.
+  </string>
+  <string name="checkboxConfirm">I understand what this means</string>
+
+  <!-- Custom view example -->
+  <string name="signalStrength">Signal strength</string>
+  <string name="excellent">Excellent</string>
+  <string name="security">Security</string>
+  <string name="securityType">802.1x EAP</string>
+  <string name="password">Password</string>
+  <string name="ssid">SSID</string>
+  <string name="ssidLit">Material Dialogs</string>
+  <string name="showPassword">Show password</string>
+  <string name="googleWifi">Google Wifi</string>
+  <string name="connect">Connect</string>
+
+  <!-- Color Chooser Examples -->
+  <string name="primary_colors">Primary Colors</string>
+  <string name="accent_colors">Accent Colors</string>
+  <string name="custom_colors">Custom Colors</string>
+  <string name="custom_colors_rgb">Custom RGB</string>
+  <string name="custom_colors_argb">Custom ARGB</string>
+
+  <!-- File and Folder Chooser Examples -->
+  <string name="select">Select</string>
+
+
+  <string name="basic">Basic</string>
+  <string name="basic_title">Basic + Title</string>
+  <string name="basic_buttons">Basic + Buttons</string>
+  <string name="basic_stacked_buttons">Basic + Stacked Buttons</string>
+  <string name="basic_title_buttons">Basic + Title + Buttons</string>
+  <string name="basic_html_content">Basic + HTML Content</string>
+  <string name="basic_long_title_buttons">Basic Long + Title + Buttons</string>
+  <string name="basic_icon_buttons">Basic + Icon + Buttons</string>
+  <string name="basic_title_checkbox_buttons">Basic + Title + Checkbox + Buttons</string>
+  <string name="list">List</string>
+  <string name="list_buttons">List + Buttons</string>
+  <string name="list_don_t_wait_for_positive">List + Don\'t Wait For Positive</string>
+  <string name="list_title_buttons">List + Title + Buttons</string>
+  <string name="list_title">List + Title</string>
+  <string name="list_title_message_buttons">List + Title + Message + Buttons</string>
+  <string name="list_long">List Long</string>
+  <string name="list_long_title">List Long + Title</string>
+  <string name="list_title_checkbox_prompt_buttons">List + Title + Checkbox Prompt + Buttons</string>
+  <string name="single_choice_lists">Single Choice Lists</string>
+  <string name="single_choice_title">Single Choice + Title</string>
+  <string name="single_choice_title_buttons">Single Choice + Title + Buttons</string>
+  <string name="single_choice_long_items">Single Choice, Long Items</string>
+  <string name="single_choice_disabled_items">Single Choice, Disabled Items</string>
+  <string name="single_choice_custom_radio_color">Single Choice, Custom Radio Color</string>
+  <string name="multiple_choice_lists">Multiple Choice Lists</string>
+  <string name="multiple_choice">Multiple Choice</string>
+  <string name="multiple_choice_buttons">Multiple Choice + Buttons</string>
+  <string name="multiple_choice_long_items">Multiple Choice, Long Items</string>
+  <string name="multiple_choice_disabled_items">Multiple Choice, Disabled Items</string>
+  <string name="action_buttons">Action Buttons</string>
+  <string name="stacked_buttons_checkbox_prompt">Stacked Buttons + Checkbox Prompt</string>
+  <string name="stacked_buttons">Stacked Buttons</string>
+  <string name="neutral_button">Neutral Button</string>
+  <string name="button_callbacks">Button Callbacks</string>
+  <string name="miscellaneous">Miscellaneous</string>
+  <string name="dialog_callbacks">Dialog Callbacks</string>
+  <string name="text_input">Text Input</string>
+  <string name="input">Input</string>
+  <string name="input_message">Input + Message</string>
+  <string name="input_counter">Input + Counter</string>
+  <string name="input_checkbox_prompt">Input + Checkbox Prompt</string>
+  <string name="custom_views">Custom Views</string>
+  <string name="custom_view">Custom View</string>
+  <string name="custom_view_web_view">Custom View, Web View</string>
+  <string name="color">Color</string>
+  <string name="color_chooser_primary">Color Chooser, Primary</string>
+  <string name="color_chooser_accent">Color Chooser, Accent</string>
+  <string name="color_chooser_custom">Color Chooser, Custom</string>
+  <string name="color_chooser_custom_no_sub">Color Chooser, Custom + No Sub</string>
+  <string name="color_chooser_primary_custom_rgb">Color Chooser, Primary + Custom RGB</string>
+  <string name="color_chooser_primary_custom_argb">Color Chooser, Primary + Custom ARGB</string>
+  <string name="file_choosers">File Choosers</string>
+  <string name="file_chooser">File Chooser</string>
+  <string name="file_chooser_buttons">File Chooser + Buttons</string>
+  <string name="file_chooser_filter">File Chooser + Filter</string>
+  <string name="folder_choosers">Folder Choosers</string>
+  <string name="folder_chooser_buttons">Folder Chooser + Buttons</string>
+  <string name="folder_chooser_filter">Folder Chooser + Filter</string>
+  <string name="datetime_pickers">DateTime Pickers</string>
+  <string name="date_picker">Date Picker</string>
+  <string name="time_picker">Time Picker</string>
+  <string name="datetime_picker">DateTime Picker</string>
+  <string name="bottom_sheets">Bottom Sheets</string>
+  <string name="informational">Informational</string>
+  <string name="item_list">Item List</string>
+  <string name="item_grid">Item Grid</string>
+  <string name="bottomsheet_custom_view">Custom View</string>
+  <string name="bottomsheet_color_picker">Color Picker</string>
+  <string name="bottomsheet_datetime_picker">DateTime Picker</string>
+
+
+  <string name="this_is_a_long_button">This is a long button</string>
+  <string name="so_is_this_these_should_stack">So is this, these should stack</string>
+  <string name="hello_world">Hello World</string>
+  <string name="how_are_you_doing">How are you doing?</string>
+  <string name="testing_long_buttons">Testing long buttons</string>
+  <string name="type_something">Type something</string>
+  <string name="pre_filled">Pre-filled!</string>
+  <string name="select_time">Select Time</string>
+  <string name="select_date_and_time">Select Date and Time</string>
+  <string name="h3_webview_custom_view_material_guidelines_for_google_com_design_spec_components_dialogs_html">
+        <![CDATA[
+            <h3>WebView Custom View</h3>
+            <ol>
+				<li><b>NEW:</b> Hey!</li>
+				<li><b>IMPROVE:</b> Hello!</li>
+				<li><b>FIX:</b> Hi!</li>
+				<li><b>FIX:</b> Hey again!</li>
+				<li><b>FIX:</b> What?</li>
+				<li><b>FIX:</b> This is an example.</li>
+				<li><b>MISC:</b> How are you?</li>
+            </ol>
+            <p>Material guidelines for dialogs：
+                <a href=\'http://www.google.com/design/spec/components/dialogs.html\'>http://www.google.com/design/spec/components/dialogs.html</a>。
+            </p>
+        ]]>
+  </string>
+
+</resources>

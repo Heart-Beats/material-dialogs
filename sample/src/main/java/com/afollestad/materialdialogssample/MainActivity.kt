@@ -108,8 +108,8 @@ class MainActivity : AppCompatActivity() {
     R.id.basic_stacked_buttons.onClickDebounced {
       MaterialDialog(this).show {
         message(R.string.useGoogleLocationServicesPrompt)
-        positiveButton(text = "This is a long button")
-        negativeButton(text = "So is this, these should stack")
+	      positiveButton(text = getString(R.string.this_is_a_long_button))
+	      negativeButton(text = getString(R.string.so_is_this_these_should_stack))
         debugMode(debugMode)
       }
     }
@@ -408,9 +408,9 @@ class MainActivity : AppCompatActivity() {
       MaterialDialog(this).show {
         title(R.string.useGoogleLocationServices)
         message(R.string.useGoogleLocationServicesPrompt)
-        positiveButton(text = "Hello World")
-        negativeButton(text = "How are you doing?")
-        neutralButton(text = "Testing long buttons")
+	      positiveButton(text = getString(R.string.hello_world))
+	      negativeButton(text = getString(R.string.how_are_you_doing))
+	      neutralButton(text = getString(R.string.testing_long_buttons))
         debugMode(debugMode)
         lifecycleOwner(this@MainActivity)
       }
@@ -420,9 +420,9 @@ class MainActivity : AppCompatActivity() {
       MaterialDialog(this).show {
         title(R.string.useGoogleLocationServices)
         message(R.string.useGoogleLocationServicesPrompt)
-        positiveButton(text = "Hello World")
-        negativeButton(text = "How are you doing?")
-        neutralButton(text = "Testing long buttons")
+	      positiveButton(text = getString(R.string.hello_world))
+	      negativeButton(text = getString(R.string.how_are_you_doing))
+	      neutralButton(text = getString(R.string.testing_long_buttons))
         checkBoxPrompt(R.string.checkboxConfirm) { checked ->
           toast("Checked? $checked")
         }
@@ -479,7 +479,7 @@ class MainActivity : AppCompatActivity() {
       MaterialDialog(this).show {
         title(R.string.useGoogleLocationServices)
         input(
-            hint = "Type something",
+	        hint = getString(R.string.type_something),
             inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_CAP_WORDS
         ) { _, text ->
           toast("Input: $text")
@@ -495,8 +495,8 @@ class MainActivity : AppCompatActivity() {
         title(R.string.useGoogleLocationServices)
         message(R.string.useGoogleLocationServicesPrompt)
         input(
-            hint = "Type something",
-            prefill = "Pre-filled!",
+	        hint = getString(R.string.type_something),
+	        prefill = getString(R.string.pre_filled),
             inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_CAP_WORDS
         ) { _, text ->
           toast("Input: $text")
@@ -512,7 +512,7 @@ class MainActivity : AppCompatActivity() {
       MaterialDialog(this).show {
         title(R.string.useGoogleLocationServices)
         input(
-            hint = "Type something",
+	        hint = getString(R.string.type_something),
             inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_CAP_WORDS,
             maxLength = 8
         ) { _, text ->
@@ -529,7 +529,7 @@ class MainActivity : AppCompatActivity() {
       MaterialDialog(this).show {
         title(R.string.useGoogleLocationServices)
         input(
-            hint = "Type something",
+	        hint = getString(R.string.type_something),
             inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_CAP_WORDS
         ) { _, text ->
           toast("Input: $text")
@@ -676,7 +676,7 @@ class MainActivity : AppCompatActivity() {
 
     R.id.time_picker.onClickDebounced {
       MaterialDialog(this).show {
-        title(text = "Select Time")
+	      title(text = getString(R.string.select_time))
         timePicker { _, time ->
           toast("Selected time: ${time.formatTime()}")
         }
@@ -687,7 +687,7 @@ class MainActivity : AppCompatActivity() {
 
     R.id.datetime_picker.onClickDebounced {
       MaterialDialog(this).show {
-        title(text = "Select Date and Time")
+	      title(text = getString(R.string.select_date_and_time))
         dateTimePicker(requireFutureDateTime = true) { _, dateTime ->
           toast("Selected date/time: ${dateTime.formatDateTime()}")
         }
@@ -766,7 +766,7 @@ class MainActivity : AppCompatActivity() {
 
     R.id.bottomsheet_dateTimePicker.onClickDebounced {
       MaterialDialog(this, BottomSheet(WRAP_CONTENT)).show {
-        title(text = "Select Date and Time")
+	      title(text = getString(R.string.select_date_and_time))
         dateTimePicker(requireFutureDateTime = true) { _, dateTime ->
           toast("Selected date/time: ${dateTime.formatDateTime()}")
         }
@@ -813,21 +813,7 @@ class MainActivity : AppCompatActivity() {
       val webView: WebView = it.getCustomView()
           .findViewById(R.id.web_view)
       webView.loadData(
-          "<h3>WebView Custom View</h3>\n" +
-              "\n" +
-              "<ol>\n" +
-              "    <li><b>NEW:</b> Hey!</li>\n" +
-              "    <li><b>IMPROVE:</b> Hello!</li>\n" +
-              "    <li><b>FIX:</b> Hi!</li>\n" +
-              "    <li><b>FIX:</b> Hey again!</li>\n" +
-              "    <li><b>FIX:</b> What?</li>\n" +
-              "    <li><b>FIX:</b> This is an example.</li>\n" +
-              "    <li><b>MISC:</b> How are you?</li>\n" +
-              "</ol>\n" +
-              "<p>Material guidelines for dialogs:\n" +
-              "    <a href='http://www.google.com/design/spec/components/dialogs.html'>" +
-              "http://www.google.com/design/spec/components/dialogs.html</a>.\n" +
-              "</p>",
+	      getString(R.string.h3_webview_custom_view_material_guidelines_for_google_com_design_spec_components_dialogs_html),
           "text/html",
           "UTF-8"
       )
