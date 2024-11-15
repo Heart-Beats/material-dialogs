@@ -76,14 +76,14 @@ fun MaterialDialog.fileChooser(
 
   if (allowFolderCreation) {
     check(hasWriteStoragePermission()) {
-      "You must have the WRITE_EXTERNAL_STORAGE permission first."
+	    context.getString(R.string.you_must_have_the_write_external_storage_permission_first)
     }
     if (filter == null) {
       actualFilter = { !it.isHidden && it.canWrite() }
     }
   } else {
     check(hasReadStoragePermission()) {
-      "You must have the READ_EXTERNAL_STORAGE permission first."
+	    context.getString(R.string.you_must_have_the_read_external_storage_permission_first)
     }
     if (filter == null) {
       actualFilter = { !it.isHidden && it.canRead() }
@@ -91,7 +91,7 @@ fun MaterialDialog.fileChooser(
   }
 
   check(initialDirectory != null) {
-    "The initial directory is null."
+	  context.getString(R.string.the_initial_directory_is_null)
   }
 
   customView(R.layout.md_file_chooser_base, noVerticalPadding = true)

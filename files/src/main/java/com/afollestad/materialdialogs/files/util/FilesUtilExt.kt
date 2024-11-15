@@ -20,9 +20,12 @@ package com.afollestad.materialdialogs.files.util
 import android.Manifest.permission
 import android.content.Context
 import android.content.pm.PackageManager
+import android.os.Build
+import android.os.Environment
 import androidx.core.content.ContextCompat
 import com.afollestad.materialdialogs.MaterialDialog
 import com.afollestad.materialdialogs.files.FileFilter
+import com.afollestad.materialdialogs.files.R
 import java.io.File
 
 internal fun File.hasParent(
@@ -43,6 +46,7 @@ internal fun File.betterParent(
 ): File? {
   val parentToUse = (if (isExternalStorage(context)) {
     // Emulated external storage's parent is empty so jump over it
+	  // context.getExternalFilesDir()?.parentFile
     context.getExternalFilesDir()?.parentFile?.parentFile
   } else {
     parentFile
@@ -75,8 +79,8 @@ internal fun File.jumpOverEmulated(context: Context): File {
 }
 
 internal fun File.friendlyName(context: Context) = when {
-  isExternalStorage(context) -> "External Storage"
-  isRoot() -> "Root"
+	isExternalStorage(context) -> context.getString(R.string.external_storage)
+	isRoot() -> context.getString(R.string.root)
   else -> name
 }
 
@@ -90,5 +94,10 @@ internal fun MaterialDialog.hasReadStoragePermission(): Boolean {
 }
 
 internal fun MaterialDialog.hasWriteStoragePermission(): Boolean {
-  return windowContext.hasPermission(permission.WRITE_EXTERNAL_STORAGE)
+	return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+		// 应用有完整存储访问权限
+		windowContext.hasPermission(permission.WRITE_EXTERNAL_STORAGE) || Environment.isExternalStorageManager()
+	} else {
+		windowContext.hasPermission(permission.WRITE_EXTERNAL_STORAGE)
+	}
 }

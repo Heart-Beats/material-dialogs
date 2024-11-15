@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="files_default_empty_text">This folder\'s empty!</string>
+    <string name="files_new_folder">New Folder…</string>
+    <string name="files_new_folder_hint">New folder name</string>
+    <string name="external_storage">External Storage</string>
+    <string name="root">Root</string>
+    <string name="you_must_have_the_write_external_storage_permission_first">
+      On Android 11 devices you must first have MANAGE_EXTERNAL_STORAGE permission, otherwise you need to have WRITE_EXTERNAL_STORAGE permission.
+    </string>
+    <string name="you_must_have_the_read_external_storage_permission_first">You must have the READ_EXTERNAL_STORAGE permission first.</string>
+    <string name="the_initial_directory_is_null">The initial directory is null.</string>
+</resources>
