@@ -3,6 +3,12 @@ ext.module_name = "materialdialogssample"
 
 apply from: rootProject.file("gradle/android_application_config.gradle")
 
+android{
+  defaultConfig {
+    minSdkVersion 21
+  }
+}
+
 android.defaultConfig.vectorDrawables.useSupportLibrary = true
 
 dependencies {
@@ -21,7 +27,7 @@ dependencies {
   implementation deps.androidx.recycler_view
   implementation deps.google_material
 
-  implementation deps.afollestad.assent
+  implementation deps.permissionx
 
-  debugImplementation deps.leak_canary
+//  debugImplementation deps.leak_canary
 }

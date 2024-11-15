@@ -30,9 +30,6 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import com.afollestad.assent.Permission.READ_EXTERNAL_STORAGE
-import com.afollestad.assent.Permission.WRITE_EXTERNAL_STORAGE
-import com.afollestad.assent.runWithPermissions
 import com.afollestad.materialdialogs.DialogBehavior
 import com.afollestad.materialdialogs.LayoutMode.WRAP_CONTENT
 import com.afollestad.materialdialogs.MaterialDialog
@@ -820,7 +817,7 @@ class MainActivity : AppCompatActivity() {
     }
   }
 
-  private fun showFileChooser() = runWithPermissions(READ_EXTERNAL_STORAGE) {
+	private fun showFileChooser() = runWithStoragePermissions(android.Manifest.permission.READ_EXTERNAL_STORAGE) {
     MaterialDialog(this).show {
       fileChooser(this@MainActivity) { _, file ->
         toast("Selected file: ${file.absolutePath}")
@@ -830,7 +827,7 @@ class MainActivity : AppCompatActivity() {
     }
   }
 
-  private fun showFileChooserButtons() = runWithPermissions(WRITE_EXTERNAL_STORAGE) {
+	private fun showFileChooserButtons() = runWithStoragePermissions(android.Manifest.permission.WRITE_EXTERNAL_STORAGE) {
     MaterialDialog(this).show {
       fileChooser(context = this@MainActivity, allowFolderCreation = true) { _, file ->
         toast("Selected file: ${file.absolutePath}")
@@ -842,7 +839,7 @@ class MainActivity : AppCompatActivity() {
     }
   }
 
-  private fun showFileChooserFilter() = runWithPermissions(READ_EXTERNAL_STORAGE) {
+	private fun showFileChooserFilter() = runWithStoragePermissions(android.Manifest.permission.READ_EXTERNAL_STORAGE) {
     MaterialDialog(this).show {
       fileChooser(context = this@MainActivity, filter = { it.extension == "txt" }) { _, file ->
         toast("Selected file: ${file.absolutePath}")
@@ -852,7 +849,7 @@ class MainActivity : AppCompatActivity() {
     }
   }
 
-  private fun showFolderChooserButtons() = runWithPermissions(WRITE_EXTERNAL_STORAGE) {
+	private fun showFolderChooserButtons() = runWithStoragePermissions(android.Manifest.permission.WRITE_EXTERNAL_STORAGE) {
     MaterialDialog(this).show {
       folderChooser(context = this@MainActivity, allowFolderCreation = true) { _, folder ->
         toast("Selected folder: ${folder.absolutePath}")
@@ -864,7 +861,7 @@ class MainActivity : AppCompatActivity() {
     }
   }
 
-  private fun showFolderChooserFilter() = runWithPermissions(READ_EXTERNAL_STORAGE) {
+	private fun showFolderChooserFilter() = runWithStoragePermissions(android.Manifest.permission.READ_EXTERNAL_STORAGE) {
     MaterialDialog(this).show {
       folderChooser(
           context = this@MainActivity, filter = { it.name.startsWith("a", true) }) { _, folder ->
