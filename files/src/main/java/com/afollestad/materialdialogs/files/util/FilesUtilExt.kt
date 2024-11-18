@@ -34,8 +34,11 @@ internal fun File.hasParent(
   filter: FileFilter
 ) = betterParent(context, writeable, filter) != null
 
+/**
+ * 是否为外部存储根路径
+ */
 internal fun File.isExternalStorage(context: Context) =
-  absolutePath == context.getExternalFilesDir()?.absolutePath
+	absolutePath == Environment.getExternalStorageDirectory().absolutePath
 
 internal fun File.isRoot() = absolutePath == "/"
 
@@ -44,28 +47,7 @@ internal fun File.betterParent(
   writeable: Boolean,
   filter: FileFilter
 ): File? {
-  val parentToUse = (if (isExternalStorage(context)) {
-    // Emulated external storage's parent is empty so jump over it
-	  // context.getExternalFilesDir()?.parentFile
-    context.getExternalFilesDir()?.parentFile?.parentFile
-  } else {
-    parentFile
-  }) ?: return null
-
-  if ((writeable && !parentToUse.canWrite()) || !parentToUse.canRead()) {
-    // We can't access this folder
-    return null
-  }
-
-  val folderContent =
-    parentToUse.listFiles()?.filter { filter?.invoke(it) ?: true } ?: emptyList()
-  if (folderContent.isEmpty()) {
-    // There is nothing in this folder most likely because we can't access files inside of it.
-    // We don't want to get stuck here.
-    return null
-  }
-
-  return parentToUse
+	return if (isExternalStorage(context)) null else parentFile
 }
 
 internal fun File.jumpOverEmulated(context: Context): File {

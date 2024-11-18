@@ -143,12 +143,12 @@ internal class FileChooserAdapter(
         if (onlyFolders) {
           rawContents
               .filter { it.isDirectory && filter?.invoke(it) ?: true }
-              .sortedBy { it.name.toLowerCase(Locale.getDefault()) }
+              .sortedBy { it.name.lowercase(Locale.getDefault()) }
         } else {
           rawContents
               .filter { filter?.invoke(it) ?: true }
               .sortedWith(compareBy({ !it.isDirectory }, {
-                it.nameWithoutExtension.toLowerCase(Locale.getDefault())
+	              it.nameWithoutExtension.lowercase(Locale.getDefault())
               }))
         }
       }
@@ -195,7 +195,7 @@ internal class FileChooserAdapter(
           if (isLightTheme) R.drawable.icon_return_dark
           else R.drawable.icon_return_light
       )
-      holder.nameView.text = currentParent.name
+      holder.nameView.text = currentParent.friendlyName(dialog.context)
       holder.itemView.isActivated = false
       return
     }
@@ -217,7 +217,7 @@ internal class FileChooserAdapter(
     val item = contents!![actualIndex]
     holder.iconView.setImageResource(item.iconRes())
     holder.nameView.text = item.name
-    holder.itemView.isActivated = selectedFile?.absolutePath == item.absolutePath ?: false
+    holder.itemView.isActivated = selectedFile?.absolutePath == (item.absolutePath ?: false)
   }
 
   private fun goUpIndex() = if (currentFolder.hasParent(dialog.context, allowFolderCreation, filter)) 0 else -1

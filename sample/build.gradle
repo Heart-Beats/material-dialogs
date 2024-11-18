@@ -6,6 +6,7 @@ apply from: rootProject.file("gradle/android_application_config.gradle")
 android{
   defaultConfig {
     minSdkVersion 21
+    targetSdk 32
   }
 }
 
