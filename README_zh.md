@@ -17,7 +17,7 @@
 
 ## 核心模块
 
-[ ![Core](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/core?label=core&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/core)
+[ ![Core](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/core?label=core&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/core)
 
 #### [核心模块教程和示例](documentation/CORE.md)
 
@@ -28,13 +28,13 @@
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:core:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:core:3.3.1'
 }
 ```
 
 ## 输入模块
 
-[ ![Input](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/input?label=input&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/input)
+[ ![Input](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/input?label=input&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/input)
 
 #### [输入模块教程和示例](documentation/INPUT.md)
 
@@ -45,13 +45,13 @@ dependencies {
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:input:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:input:3.3.1'
 }
 ```
 
 ## 文件模块
 
-[ ![Files](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/files?label=files&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/files)
+[ ![Files](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/files?label=files&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/files)
 
 #### [文件模块教程和示例](documentation/FILES.md)
 
@@ -62,13 +62,13 @@ dependencies {
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:files:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:files:3.3.1'
 }
 ```
 
 ## 颜色模块
 
-[ ![Color](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/color?label=color&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/color)
+[ ![Color](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/color?label=color&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/color)
 
 #### [颜色模块教程和示例](documentation/COLOR.md)
 
@@ -79,13 +79,13 @@ dependencies {
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:color:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:color:3.3.1'
 }
 ```
 
 ## 日期时间模块
 
-[ ![DateTime](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/datetime?label=datetime&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/datetime)
+[ ![DateTime](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/datetime?label=datetime&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/datetime)
 
 #### [日期时间模块教程和示例](documentation/DATETIME.md)
 
@@ -96,13 +96,13 @@ dependencies {
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:datetime:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:datetime:3.3.1'
 }
 ```
 
 ## 底部表单模块
 
-[ ![Bottom Sheets](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/bottomsheets?label=bottomsheets&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/bottomsheets)
+[ ![Bottom Sheets](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/bottomsheets?label=bottomsheets&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/bottomsheets)
 
 #### [底部表单模块教程和示例](documentation/BOTTOMSHEETS.md)
 
@@ -113,13 +113,13 @@ dependencies {
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:bottomsheets:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:bottomsheets:3.3.1'
 }
 ```
 
 ## 生命周期模块
 
-[ ![Lifecycle](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/lifecycle?label=lifecycle&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/lifecycle)
+[ ![Lifecycle](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/lifecycle?label=lifecycle&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/lifecycle)
 
 #### [生命周期模块教程和示例](documentation/LIFECYCLE.md)
 
@@ -128,6 +128,6 @@ dependencies {
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:lifecycle:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:lifecycle:3.3.1'
 }
 ```

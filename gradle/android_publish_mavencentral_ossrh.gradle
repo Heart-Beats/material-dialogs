@@ -1,0 +1,170 @@
+if (versions == null || versions.publish_version == null) {
+  throw new IllegalStateException("Unable to reference publish_version!")
+} else if (module_group == null || module_name == null) {
+  throw new IllegalStateException("Must provide module_group and module_name!")
+}
+
+group = module_group
+version = versions.publish_version
+
+apply plugin: 'maven-publish'
+apply plugin: 'signing'
+
+signing {
+  useGpgCmd() //使用 gpg-agent
+  sign publishing.publications
+}
+
+task androidSourcesJar(type: Jar) {
+  archiveClassifier.set('sources')
+  if (project.plugins.findPlugin("com.android.library")) {
+    // For Android libraries
+    from android.sourceSets.main.java.srcDirs
+    from android.sourceSets.main.kotlin.srcDirs
+  } else {
+    // For pure Kotlin libraries, in case you have them
+    from sourceSets.main.java.srcDirs
+    from sourceSets.main.kotlin.srcDirs
+  }
+}
+
+artifacts {
+  archives androidSourcesJar
+}
+
+// 相关私密信息不可直接定义在项目中，最好定义在用户的 Gradle 主目录的 gradle.properties 文件或者环境变量中
+ext["signing.keyId"] = hasProperty('signing.keyId') ? property('signing.keyId') : System.getenv('SIGNING_KEY_ID')
+ext["signing.password"] = hasProperty('signing.password') ? property('signing.password') : System.getenv('SIGNING_PASSWORD')
+ext["signing.secretKeyRingFile"] = hasProperty('signing.secretKeyRingFile') ? property('signing.secretKeyRingFile') : System.getenv('SIGNING_SECRET_KEY_RING_FILE')
+ext["ossrhUsername"] = hasProperty('ossrhUsername') ? property('ossrhUsername') : System.getenv('OSSRH_USERNAME')
+ext["ossrhPassword"] = hasProperty('ossrhPassword') ? property('ossrhPassword') : System.getenv('OSSRH_PASSWORD')
+ext["sonatypeStagingProfileId"] = hasProperty('sonatypeStagingProfileId') ? property('sonatypeStagingProfileId') : System.getenv('SONATYPE_STAGING_PROFILE_ID')
+
+File secretPropsFile = project.rootProject.file('local.properties')
+if (secretPropsFile.exists()) {
+  Properties p = new Properties()
+  new FileInputStream(secretPropsFile).withCloseable { is -> p.load(is) }
+  p.each { name, value -> ext[name] = value }
+}
+
+publishing {
+  publications {
+    release(MavenPublication) {
+      // The coordinates of the library, being set from variables that
+      // we'll set up later
+      groupId module_group
+      artifactId module_name
+      version versions.publish_version
+
+      // Two artifacts, the `aar` (or `jar`) and the sources
+      if (project.plugins.findPlugin("com.android.library")) {
+        artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
+      } else {
+        artifact("$buildDir/libs/${project.getName()}-${version}.jar")
+      }
+      artifact androidSourcesJar
+
+      // Mostly self-explanatory metadata
+      pom {
+        packaging 'aar'
+        name = module_name
+        description = '😍 A beautiful, fluid, and extensible dialogs API for Kotlin & Android.'
+        url = 'https://github.com/Heart-Beats/material-dialogs'
+        licenses {
+          license {
+            name = 'Apache 2.0 License'
+            url = 'https://github.com/Heart-Beats/material-dialogs/blob/main/LICENSE.md'
+          }
+        }
+        developers {
+          developer {
+            id = 'afollestad'
+            name = 'Aidan Follestad'
+            email = 'dont-email-me@af.codes'
+          }
+          // Add all other devs here...
+        }
+        // Version control info - if you're using GitHub, follow the format as seen here
+        scm {
+          connection = 'scm:git:github.com/afollestad/material-dialogs.git'
+          developerConnection = 'scm:git:ssh://github.com/afollestad/material-dialogs.git'
+          url = 'https://github.com/Heart-Beats/material-dialogs/tree/main'
+        }
+
+        //    一个稍微有点 hacky 的修复，以便您的 POM 将包含您的库所构建的任何传递依赖项
+        withXml {
+          def dependenciesNode = asNode().appendNode('dependencies')
+
+          // 该依赖包括 implementation 和 api 依赖
+          def implementationDependencies = project.configurations.implementation.allDependencies
+          def apiDependencies = project.configurations.api.allDependencies
+          def compileOnlyDependencies = project.configurations.compileOnly.allDependencies
+
+          def realImplementationDependencies = implementationDependencies - apiDependencies
+
+          // 生成 implementation 节点依赖
+          realImplementationDependencies.each {
+            createDependencyNode(dependenciesNode, 'runtime', it.group, it.name, it.version)
+          }
+
+          // 生成 api 节点依赖
+          apiDependencies.each {
+            createDependencyNode(dependenciesNode, 'compile', it.group, it.name, it.version)
+          }
+
+          // 生成 compileOnly 节点依赖
+          compileOnlyDependencies.each {
+            createDependencyNode(dependenciesNode, 'provided', it.group, it.name, it.version)
+          }
+        }
+      }
+    }
+  }
+
+  // The repository to publish to, Sonatype/MavenCentral
+  repositories {
+    maven {
+      // This is an arbitrary name, you may also use "mavencentral" or
+      // any other name that's descriptive for you
+      name = "sonatype"
+      url = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
+      credentials {
+        username ossrhUsername
+        password ossrhPassword
+      }
+    }
+  }
+}
+
+/**
+ *
+ * 设置 pom 文件的 dependencies节点
+ *      别的项目依赖该 pom  文件时，会从 dependencies节点下根据 scope 来选择是否下载依赖库
+ *
+ *  scope 有如下取值：
+ *      compile：      如果没有指定 scope 标签，maven 默认为这个范围。编译依赖关系在所有 classpath 中都可用。此外，这些依赖关系被传播到依赖项目
+ *      provided：    与 compile 类似，但是表示您希望 jdk 或容器在运行时提供它(即系统类库)。它只适用于编译和测试 classpath，不可传递
+ *      runtime：    此范围表示编译不需要依赖关系，而是用于执行。它是在运行时和测试 classpath，但不是编译 classpath
+ *      test：      此范围表示正常使用应用程序不需要依赖关系，仅适用于测试编译和执行阶段。它不是传递的。
+ *      system：   此范围与 provided 类似，除了您必须提供明确包含它的 jar。该 artifact 始终可用，并且不是在仓库中查找。
+ *
+ *      常用类比总结：
+ *
+ *       maven 中     |    gradle 中
+ *       ---------------------------
+ *        compile    |       api
+ *       provided    |   compileOnly
+ *       runtime     | implementation
+ *
+ */
+private static def createDependencyNode(root, scope, groupId, artifactId, version) {
+  def dependencyNode = root.appendNode('dependency')
+  dependencyNode.appendNode('groupId', groupId)
+  dependencyNode.appendNode('artifactId', artifactId)
+  dependencyNode.appendNode('version', version)
+  dependencyNode.appendNode('scope', scope)
+}
+
+afterEvaluate {
+  publishReleasePublicationToSonatypeRepository.dependsOn assembleRelease
+}

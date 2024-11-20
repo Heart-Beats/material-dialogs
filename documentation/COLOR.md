@@ -9,14 +9,14 @@
 
 ## Gradle Dependency
 
-[ ![Color](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/color?label=color&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/color)
+[ ![Color](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/color?label=color&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/color)
 
 The `color` module contains extensions to the core module, such as a color chooser.
 
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:color:3.2.1'
+  implementation 'io.github.heart-beats.material-dialogs:color:3.2.1'
 }
 ```
 

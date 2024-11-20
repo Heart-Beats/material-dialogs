@@ -19,7 +19,7 @@ Please note that since Material Dialogs 2.x.x, this library only supports Kotlin
 
 ## Core
 
-[ ![Core](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/core?label=core&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/core)
+[ ![Core](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/core?label=core&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/core)
 
 #### [Core Tutorial and Samples](documentation/CORE.md)
 
@@ -31,13 +31,13 @@ core and normal-use functionality.
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:core:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:core:3.3.1'
 }
 ```
 
 ## Input
 
-[ ![Input](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/input?label=input&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/input)
+[ ![Input](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/input?label=input&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/input)
 
 #### [Input Tutorial and Samples](documentation/INPUT.md)
 
@@ -48,13 +48,13 @@ The `input` module contains extensions to the core module, such as a text input 
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:input:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:input:3.3.1'
 }
 ```
 
 ## Files
 
-[ ![Files](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/files?label=files&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/files)
+[ ![Files](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/files?label=files&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/files)
 
 #### [Files Tutorial and Samples](documentation/FILES.md)
 
@@ -65,13 +65,13 @@ The `files` module contains extensions to the core module, such as a file and fo
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:files:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:files:3.3.1'
 }
 ```
 
 ## Color
 
-[ ![Color](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/color?label=color&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/color)
+[ ![Color](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/color?label=color&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/color)
 
 #### [Color Tutorial and Samples](documentation/COLOR.md)
 
@@ -82,13 +82,13 @@ The `color` module contains extensions to the core module, such as a color choos
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:color:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:color:3.3.1'
 }
 ```
 
 ## DateTime
 
-[ ![DateTime](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/datetime?label=datetime&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/datetime)
+[ ![DateTime](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/datetime?label=datetime&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/datetime)
 
 #### [DateTime Tutorial and Samples](documentation/DATETIME.md)
 
@@ -99,13 +99,13 @@ The `datetime` module contains extensions to make date, time, and date-time pick
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:datetime:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:datetime:3.3.1'
 }
 ```
 
 ## Bottom Sheets
 
-[ ![Bottom Sheets](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/bottomsheets?label=bottomsheets&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/bottomsheets)
+[ ![Bottom Sheets](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/bottomsheets?label=bottomsheets&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/bottomsheets)
 
 #### [Bottom Sheets Tutorial and Samples](documentation/BOTTOMSHEETS.md)
 
@@ -118,13 +118,13 @@ too!
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:bottomsheets:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:bottomsheets:3.3.1'
 }
 ```
 
 ## Lifecycle
 
-[ ![Lifecycle](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/lifecycle?label=lifecycle&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/lifecycle)
+[ ![Lifecycle](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/lifecycle?label=lifecycle&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/lifecycle)
 
 #### [Lifecycle Tutorial and Samples](documentation/LIFECYCLE.md)
 
@@ -133,7 +133,7 @@ The `lifecycle` module contains extensions to make dialogs work with AndroidX li
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:lifecycle:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:lifecycle:3.3.1'
 }
 ```
 

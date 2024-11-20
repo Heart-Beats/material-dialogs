@@ -12,14 +12,14 @@
 
 ## Gradle Dependency
 
-[ ![Input](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/input?label=input&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/input)
+[ ![Input](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/input?label=input&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/input)
 
 The `input` module contains extensions to the core module, such as a text input dialog.
 
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:input:3.3.0'
+  implementation 'io.github.heart-beats.material-dialogs:input:3.3.1'
 }
 ```
 

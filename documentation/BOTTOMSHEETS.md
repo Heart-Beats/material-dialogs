@@ -13,7 +13,7 @@
 
 ## Gradle Dependency
 
-[ ![Bottom Sheets](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/bottomsheets?label=bottomsheets&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/bottomsheets)
+[ ![Bottom Sheets](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/bottomsheets?label=bottomsheets&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/bottomsheets)
 
 The `bottomsheets` module contains extensions to turn modal dialogs into bottom sheets, among 
 other functionality like showing a grid of items.
@@ -21,7 +21,7 @@ other functionality like showing a grid of items.
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:bottomsheets:3.2.1'
+  implementation 'io.github.heart-beats.material-dialogs:bottomsheets:3.2.1'
 }
 ```
 

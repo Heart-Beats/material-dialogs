@@ -28,7 +28,7 @@
 
 ## Gradle Dependency
 
-[ ![Core](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/core?label=core&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/core)
+[ ![Core](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/core?label=core&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/core)
 
 The `core` module contains everything you need to get started with the library. It contains all
 core and normal-use functionality.
@@ -36,7 +36,7 @@ core and normal-use functionality.
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:core:3.2.1'
+  implementation 'io.github.heart-beats.material-dialogs:core:3.2.1'
 }
 ```
 

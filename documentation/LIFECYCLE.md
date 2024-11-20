@@ -8,14 +8,14 @@
 
 ## Gradle Dependency
 
-[ ![Lifecycle](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/lifecycle?label=lifecycle&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/lifecycle)
+[ ![Lifecycle](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/lifecycle?label=lifecycle&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/lifecycle)
 
 The `lifecycle` module contains extensions to make dialogs work with AndroidX lifecycles.
 
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:lifecycle:3.2.1'
+  implementation 'io.github.heart-beats.material-dialogs:lifecycle:3.2.1'
 }
 ```
 

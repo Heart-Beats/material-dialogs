@@ -16,14 +16,14 @@
 
 ## Gradle Dependency
 
-[ ![Files](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/files?label=files&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/files)
+[ ![Files](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/files?label=files&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/files)
 
 The `files` module contains extensions to the core module, such as a file and folder chooser.
 
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:files:3.2.1'
+  implementation 'io.github.heart-beats.material-dialogs:files:3.2.1'
 }
 ```
 

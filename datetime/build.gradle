@@ -1,4 +1,4 @@
-ext.module_group = "com.afollestad.material-dialogs"
+ext.module_group = "io.github.heart-beats.material-dialogs"
 ext.module_name = "datetime"
 
 apply from: rootProject.file("gradle/android_library_config.gradle")

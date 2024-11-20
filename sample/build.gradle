@@ -1,4 +1,4 @@
-ext.module_group = "com.afollestad"
+ext.module_group = "io.github.heart-beats"
 ext.module_name = "materialdialogssample"
 
 apply from: rootProject.file("gradle/android_application_config.gradle")

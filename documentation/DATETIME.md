@@ -9,14 +9,14 @@
 
 ## Gradle Dependency
 
-[ ![DateTime](https://img.shields.io/maven-central/v/com.afollestad.material-dialogs/datetime?label=datetime&style=for-the-badge) ](https://repo1.maven.org/maven2/com/afollestad/material-dialogs/datetime)
+[ ![DateTime](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/datetime?label=datetime&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/datetime)
 
 The `datetime` module contains extensions to make date, time, and date-time picker dialogs.
 
 ```gradle
 dependencies {
   ...
-  implementation 'com.afollestad.material-dialogs:datetime:3.2.1'
+  implementation 'io.github.heart-beats.material-dialogs:datetime:3.2.1'
 }
 ```
 
