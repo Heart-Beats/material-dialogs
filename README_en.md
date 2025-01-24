@@ -1,6 +1,6 @@
-# [Material Dialogs](./README.md) | [材料对话框](./README_zh.md)
+# [Material Dialogs](./README_en) | [材料对话框](./README)
 
-#### [查看版本发布和更新日志](https://github.com/afollestad/material-dialogs/releases)
+#### [View Releases and Changelogs](https://github.com/afollestad/material-dialogs/releases)
 
 [![Android CI](https://github.com/afollestad/material-dialogs/workflows/Android%20CI/badge.svg)](https://github.com/afollestad/material-dialogs/actions?query=workflow%3A%22Android+CI%22)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0a4acc30a9ce440087f7688735359bb8)](https://www.codacy.com/app/drummeraidan_50/material-dialogs?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=afollestad/material-dialogs&amp;utm_campaign=Badge_Grade)
@@ -10,18 +10,21 @@
 
 ![Showcase](https://raw.githubusercontent.com/afollestad/material-dialogs/main/art/showcase4.png)
 
-# 模块
+# Modules
 
-核心模块是使用本库所必需的基础模块。其他模块是对核心模块的扩展。
-请注意，自 Material Dialogs 2.x.x 版本起，本库仅支持 Kotlin。最新的 Java 版本是`0.9.6.0`，可在[此处]()找到。请注意，0.9.6.0 版本已不受支持，不会对该版本进行错误修复和改进。
+The core module is the fundamental module that you need in order to use this library. The others
+are extensions to core.
 
-## 核心模块
+Please note that since Material Dialogs 2.x.x, this library only supports Kotlin. The latest Java version is `0.9.6.0` and can be found [here](README_OLD.md). Note that 0.9.6.0 is unsupported, bugs & improvements will not be made to that version.
+
+## Core
 
 [ ![Core](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/core?label=core&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/core)
 
-#### [核心模块教程和示例](documentation/CORE.md)
+#### [Core Tutorial and Samples](documentation/CORE.md)
 
-`core`模块包含了开始使用本库所需的一切内容。它包含了所有核心功能和常规使用功能。
+The `core` module contains everything you need to get started with the library. It contains all
+core and normal-use functionality.
 
 <img src="https://raw.githubusercontent.com/afollestad/material-dialogs/main/art/basic_with_buttons.png" width="250px" />
 
@@ -32,13 +35,13 @@ dependencies {
 }
 ```
 
-## 输入模块
+## Input
 
 [ ![Input](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/input?label=input&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/input)
 
-#### [输入模块教程和示例](documentation/INPUT.md)
+#### [Input Tutorial and Samples](documentation/INPUT.md)
 
-`input`模块包含对核心模块的扩展，例如文本输入对话框。
+The `input` module contains extensions to the core module, such as a text input dialog.
 
 <img src="https://raw.githubusercontent.com/afollestad/material-dialogs/main/art/input.png" width="250px" />
 
@@ -49,13 +52,13 @@ dependencies {
 }
 ```
 
-## 文件模块
+## Files
 
 [ ![Files](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/files?label=files&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/files)
 
-#### [文件模块教程和示例](documentation/FILES.md)
+#### [Files Tutorial and Samples](documentation/FILES.md)
 
-`files`模块包含对核心模块的扩展，例如文件和文件夹选择器。
+The `files` module contains extensions to the core module, such as a file and folder chooser.
 
 <img src="https://raw.githubusercontent.com/afollestad/material-dialogs/main/art/file_chooser.png" width="250px" />
 
@@ -66,13 +69,13 @@ dependencies {
 }
 ```
 
-## 颜色模块
+## Color
 
 [ ![Color](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/color?label=color&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/color)
 
-#### [颜色模块教程和示例](documentation/COLOR.md)
+#### [Color Tutorial and Samples](documentation/COLOR.md)
 
-`color`模块包含对核心模块的扩展，例如颜色选择器。
+The `color` module contains extensions to the core module, such as a color chooser.
 
 <img src="https://raw.githubusercontent.com/afollestad/material-dialogs/main/art/color_chooser.png" width="250px" />
 
@@ -83,13 +86,13 @@ dependencies {
 }
 ```
 
-## 日期时间模块
+## DateTime
 
 [ ![DateTime](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/datetime?label=datetime&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/datetime)
 
-#### [日期时间模块教程和示例](documentation/DATETIME.md)
+#### [DateTime Tutorial and Samples](documentation/DATETIME.md)
 
-`datetime`模块包含用于创建日期、时间和日期时间选择器对话框的扩展功能。
+The `datetime` module contains extensions to make date, time, and date-time picker dialogs.
 
 <img src="https://raw.githubusercontent.com/afollestad/material-dialogs/main/art/datetimepicker.png" width="500px" />
 
@@ -100,13 +103,15 @@ dependencies {
 }
 ```
 
-## 底部表单模块
+## Bottom Sheets
 
 [ ![Bottom Sheets](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/bottomsheets?label=bottomsheets&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/bottomsheets)
 
-#### [底部表单模块教程和示例](documentation/BOTTOMSHEETS.md)
+#### [Bottom Sheets Tutorial and Samples](documentation/BOTTOMSHEETS.md)
 
-`bottomsheets`模块包含将模态对话框转换为底部表单的扩展功能，以及其他功能，例如显示项目网格。也一定要查看此模块的示例项目！
+The `bottomsheets` module contains extensions to turn modal dialogs into bottom sheets, among
+other functionality like showing a grid of items. Be sure to checkout the sample project for this,
+too!
 
 <img src="https://raw.githubusercontent.com/afollestad/material-dialogs/main/art/bottomsheet_customview.png" width="250px" />
 
@@ -117,13 +122,13 @@ dependencies {
 }
 ```
 
-## 生命周期模块
+## Lifecycle
 
 [ ![Lifecycle](https://img.shields.io/maven-central/v/io.github.heart-beats.material-dialogs/lifecycle?label=lifecycle&style=for-the-badge) ](https://repo1.maven.org/maven2/io/github/heart-beats/material-dialogs/lifecycle)
 
-#### [生命周期模块教程和示例](documentation/LIFECYCLE.md)
+#### [Lifecycle Tutorial and Samples](documentation/LIFECYCLE.md)
 
-`lifecycle`模块包含使对话框与 AndroidX 生命周期协同工作的扩展功能。
+The `lifecycle` module contains extensions to make dialogs work with AndroidX lifecycles.
 
 ```gradle
 dependencies {
@@ -131,3 +136,4 @@ dependencies {
   implementation 'io.github.heart-beats.material-dialogs:lifecycle:3.3.1'
 }
 ```
+
